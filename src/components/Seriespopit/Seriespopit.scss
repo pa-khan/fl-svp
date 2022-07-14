@@ -1,0 +1,212 @@
+.seriespopit {
+  padding: 58px 0 200px 0;
+}
+
+.seriespopit-title {
+  font-family: "RFDewiExtended";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 111.2%;
+  text-align: center;
+  color: #344463;
+}
+
+.seriespopit-block {
+  display: flex;
+  justify-content: center;
+  padding: 49px 0 0 0;
+}
+
+.seriespopit-border {
+  width: 620px;
+  padding: 53px 68px 61px 68px;
+  background: #F4F7FE;
+  border-radius: 38px;
+  box-shadow: 0px 27px 22px -11px rgb(27 52 81 / 18%);
+}
+
+.seriespopit-img {
+  padding: 3px 0 0 0;
+}
+
+.seriespopit-suptitle {
+  padding: 56px 0 0 0;
+  font-family: 'RFDewiExtended';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #344463;
+}
+
+.seriespopit-suptitle a {
+  background-color: #2AA5A0;
+  background-image: linear-gradient(266.92deg, #7CAEF5 6.31%, #BBB8F7 91.68%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+
+
+
+  transform: rotate(0.05deg);
+
+
+  border-bottom: 1px solid #C2C7D0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+ul.tabs li {
+  background: none;
+  font-family: 'RFDewiExtended';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 111.2%;
+  text-align: center;
+  color: #344463;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+  width: 50%;
+  padding: 0 0 20px 0;
+
+}
+
+ul.tabs li.current {
+  z-index: 1;
+  font-weight: 700;
+  position: relative;
+}
+
+ul.tabs li.current:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+
+  content: '';
+  border-bottom: 3px solid rgba(99, 149, 248, 1);
+}
+
+.tab-content {
+  position: relative;
+  z-index: 1;
+  display: none;
+  padding: 47px 0 0 0;
+}
+
+.tab-content.current {
+  display: inherit;
+}
+
+.tabs-title {
+  font-family: 'RFDewiExtended';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #344463;
+  padding: 0 0 8px 0;
+}
+
+.tabs-input {
+  padding: 16px 0 0 0;
+}
+
+.tabs-input input {
+  font-family: 'RFDewiExtended';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #59687A;
+  margin: 0 0 0 0;
+  width: 100%;
+  padding: 0 0 0 19px;
+  border: none;
+  height: 56px;
+  background: #FFFFFF;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+.tabs-input input.--error {
+  border-color: #f00;
+}
+
+.tabs-input input::-webkit-input-placeholder {
+  color: #59687A;
+}
+
+.tabs-input input::-moz-placeholder {
+  color: #59687A;
+}
+
+.tabs-input input:-ms-input-placeholder {
+  color: #59687A;
+}
+
+.tabs-input input::placeholder {
+  color: #59687A;
+}
+
+.tabs-button {
+  padding: 32px 0 0 0;
+}
+
+.tabs-button button {
+  font-family: 'RFDewiExtended';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #282D49;
+  background: linear-gradient(266.92deg, #7CAEF5 6.31%, #BBB8F7 91.68%);
+  border-radius: 22px;
+  width: 100%;
+  padding: 19px 0;
+  border: none;
+  transition: .3s;
+}
+
+.tabs-button button:hover {
+  background: linear-gradient(266.92deg, #6395F8 6.31%, #B68FFF 91.68%), linear-gradient(266.92deg, #7CAEF5 6.31%, #BBB8F7 91.68%);
+  transition: 0.3s;
+}
+
+.tabs-suptitle {
+  padding: 16px 0 0 0;
+  font-family: 'RFDewiExtended';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 120.34%;
+  text-align: center;
+  color: #59687A;
+}
+
+
+@media (max-width: 575.9px) {
+  .seriespopit-title {
+    font-size: 25px;
+  }
+
+  .seriespopit-border {
+    padding: 56px 24px 47px 24px;
+    width: 100%;
+  }
+
+  .seriespopit-border ul.tabs li {
+    font-size: 18px;
+  }
+}

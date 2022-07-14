@@ -1,0 +1,92 @@
+@import "@/assets/styles/vars.scss";
+
+.solu {
+  padding: 55px 0 106px;
+
+  &_span {
+    padding: 15px 20px;
+    margin-right: 448px;
+  }
+
+  &_bottom {
+    font-size: 18px;
+    font-family: $os;
+    width: 40%;
+    margin-left: auto;
+    margin-right: 8.6%;
+    margin-top: 45px;
+    line-height: 1.47em;
+  }
+
+  &_text {
+    line-height: 1.28em;
+  }
+}
+
+@media (max-width: 1199.90px) {
+  .solu {
+    &_bottom {
+      margin-right: 5%;
+    }
+  }
+}
+
+
+@media (max-width: 991.90px) {
+  .solu {
+    &_bottom {
+      width: 50%;
+      margin-right: 20px;
+    }
+
+    .solu {
+      &_span {
+        margin-right: 150px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 767.90px) {
+
+  .solu {
+    .solu {
+      &_span {
+        margin-right: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.90px) {
+  .solu {
+    padding-bottom: 25px;
+    padding-left: 8px;
+    padding-top: 69px;
+
+    &_bottom {
+      margin-top: 36px;
+      width: 100%;
+      border-top: 1px solid #344463;
+      padding-top: 8px;
+      font-size: 16px;
+    }
+
+    .solu {
+      &_span {
+        margin-right: 16px;
+      }
+    }
+
+    &_span {
+      left: 0px;
+      letter-spacing: 0.005em;
+      padding: 7px 11px;
+    }
+
+    &_text {
+      line-height: 33px;
+    }
+  }
+}

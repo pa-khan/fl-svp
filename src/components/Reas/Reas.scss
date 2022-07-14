@@ -1,0 +1,126 @@
+@import "@/assets/styles/vars.scss";
+
+.reas {
+  padding: 86px 0 65px;
+
+  &_wrapper {
+    position: relative;
+    padding: 108px 74px 138px;
+    background: linear-gradient(104.57deg, #064A89 24.59%, #65A6E9 106.34%);
+    border-radius: 63px;
+    color: #fff;
+  }
+
+  &_span {
+    border-color: #fff;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    padding: 15px 20px;
+  }
+
+  &_bottom {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+
+    &-text {
+      width: 49%;
+      font-size: 18px;
+      line-height: 1.5;
+      font-family: $os;
+
+      span+span {
+        margin-top: 40px;
+      }
+
+      span {
+        display: flex;
+      }
+    }
+  }
+
+  &_img {
+    width: 46%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 3;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 1199.90px) {
+  .reas {
+    .reas {
+      &_span {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.90px) {
+  .reas {
+    &_wrapper {
+      padding: 60px 40px 80px;
+    }
+  }
+}
+
+@media (max-width: 575.90px) {
+  .reas {
+    padding-top: 0;
+
+    &_wrapper {
+      margin-left: -15px;
+      margin-right: -15px;
+      width: calc(100% + 30px);
+      padding: 50px 23px 192px;
+      border-radius: 50px;
+      background: linear-gradient(171.7deg, #064A89 59.36%, #65A6E9 123.21%);
+    }
+
+
+
+    &_text {
+      margin-top: 44px;
+      display: flex;
+      text-indent: 60px;
+    }
+
+    &_bottom {
+      margin-top: 32px;
+
+      &-text {
+        width: 100%;
+        max-width: 270px;
+        font-size: 16px;
+
+        span+span {
+          margin-top: 24px;
+        }
+      }
+    }
+
+    &_img {
+      width: 100%;
+      bottom: 0px;
+    }
+
+    .reas {
+      &_span {
+        top: 10px;
+        margin-left: 0px;
+        border-color: #fff !important;
+        margin-right: 16px;
+        padding: 7px 10px;
+      }
+    }
+  }
+
+
+}

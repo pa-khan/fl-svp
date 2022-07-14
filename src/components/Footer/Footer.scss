@@ -1,0 +1,108 @@
+@import "@/assets/styles/vars.scss";
+
+.footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: #464C87;
+
+  &_wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &_rules,
+  &_right {
+    display: flex;
+    line-height: 1.5;
+    color: #fff;
+    font-family: $os;
+  }
+
+  &_rules {
+    margin-left: 148px;
+    margin-right: 35px;
+    text-decoration: none;
+  }
+
+  a {
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+@media (max-width: 991.90px) {
+  .footer {
+    &_rules {
+      margin-left: 70px;
+    }
+  }
+}
+
+@media (max-width: 767.90px) {
+  .footer {
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    &_wrapper {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &_rules {
+      margin-top: 0px;
+      margin-left: 0;
+    }
+
+    &_right {
+      margin-top: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 575.90px) {
+  .footer {
+    &_rules {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 220px;
+      margin-bottom: 27px;
+      order: 1;
+    }
+
+    &_wrapper {
+      text-align: center;
+    }
+
+    &_right {
+      order: 2;
+    }
+  }
+}
+
+
+@media (max-width: 575.90px) {
+  .footer {
+    background-color: transparent;
+    height: 120px;
+    padding-bottom: 0;
+    margin-top: -135px;
+    padding-top: 0;
+
+    &_rules {
+      margin-bottom: 14px;
+    }
+
+    &_right {
+      margin-top: 0;
+    }
+
+    &_wrapper {
+      flex-direction: column;
+      font-size: 14px;
+    }
+  }
+}

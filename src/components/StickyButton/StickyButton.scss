@@ -1,0 +1,30 @@
+.sticky_button {
+  position: fixed;
+  bottom: 25px;
+  top: auto;
+  width: 100%;
+  max-width: 300px;
+  margin: 0;
+  z-index: 3;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  transition: 0.6s ease-out;
+
+  .btn {
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: none;
+    box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 8%);
+  }
+
+
+  &.sticky_button-active {
+    transform: translate(-50%, 0%);
+  }
+
+  &:hover {
+    .btn {
+      color: #fff;
+      background: #D71300;
+    }
+  }
+}
