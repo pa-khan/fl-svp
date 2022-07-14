@@ -48,7 +48,8 @@
               <img src="../../assets/images/seriespopit-img.png" alt="">
             </div>
             <div class="seriespopit-suptitle">
-              Спасибо! Мы отправили ссылку на вход <br>на <a href="#">hello@mail.ru.</a> Перейдите по ссылке, чтобы
+              Спасибо! Мы отправили ссылку на вход <br>на <a href="#">{{ fields.email.value }}</a> Перейдите по ссылке,
+              чтобы
               войти
               в личный кабинет
             </div>
@@ -58,7 +59,8 @@
               <img src="../../assets/images/seriespopit-img.png" alt="">
             </div>
             <div class="seriespopit-suptitle">
-              Спасибо! Мы отправили ссылку на вход <br>на <a href="#">hello@mail.ru.</a> Перейдите по ссылке, чтобы
+              Спасибо! Мы отправили ссылку на вход <br>на <a href="#">{{ fields.email.value }}</a> Перейдите по ссылке,
+              чтобы
               войти
               в личный кабинет
             </div>
