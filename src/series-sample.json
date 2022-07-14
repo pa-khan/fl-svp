@@ -1,0 +1,47 @@
+[
+  {
+    "begin_view": 209,
+    "preview_image": "https://static.yburlan.ru/cdn/lucy/zhesty_i_mimika_cheloveka-preview-big_.jpeg",
+    "duration": 11700000,
+    "hint_placeholder": "Оплатите тренинг до deadline чтобы открыть доступ",
+    "done_view": 14,
+    "free": false,
+    "hint": "Оплатите полный тренинг чтобы пройти эту лекцию",
+    "description": "4784 человека, досмотревших до конца, получили результаты для своей жизни. Навык мыслить по-новому увеличивается от серии к серии",
+    "complete_percent": 0.99,
+    "position": 15,
+    "preview_video": "https://static.yburlan.ru/cdn/lucy/zhesty_i_mimika_cheloveka-preview-big_.jpeg",
+    "title": "Избавление от прокрастинации и апатии",
+    "connection_key": "Serial1"
+  },
+  {
+    "preview_image": "https://static.yburlan.ru/cdn/lucy/zvukovoj_vektor-web-preview_small.jpeg",
+    "hint": "Оплатите полный тренинг чтобы пройти эту лекцию",
+    "begin_view": 7,
+    "hint_placeholder": "Оплатите тренинг до deadline чтобы открыть доступ",
+    "position": 16,
+    "free": false,
+    "preview_video": "https://static.yburlan.ru/cdn/lucy/zvukovoj_vektor-web-preview_small.jpeg",
+    "title": "В чём смысл жизни? Кто Я? Откуда пришёл и куда иду?",
+    "connection_key": "Serial1",
+    "complete_percent": 0.99,
+    "description": "4784 человека, досмотревших до конца, получили результаты для своей жизни. Навык мыслить по-новому увеличивается от серии к серии",
+    "done_view": 7,
+    "duration": 11340000
+  },
+  {
+    "complete_percent": 0.99,
+    "connection_key": "Serial1",
+    "free": false,
+    "preview_video": "https://static.yburlan.ru/cdn/lucy/seks fantazii_1.jpeg",
+    "description": "4784 человека, досмотревших до конца, получили результаты для своей жизни. Навык мыслить по-новому увеличивается от серии к серии",
+    "done_view": 3,
+    "duration": 12420000,
+    "hint_placeholder": "Оплатите тренинг до deadline чтобы открыть доступ",
+    "title": "Женская сексуальность. Любовь, секс и слёзы.",
+    "position": "17",
+    "begin_view": 7,
+    "preview_image": "https://static.yburlan.ru/cdn/lucy/seks fantazii_1.jpeg",
+    "hint": "Оплатите полный тренинг чтобы пройти эту лекцию"
+  }
+]

@@ -1,0 +1,150 @@
+.fulltraining {
+  padding: 115px 0 65px 0;
+}
+
+.fulltraining-border {
+  position: relative;
+  border-radius: 38px;
+  padding: 99px 20px 79px 102px;
+  background: url(../../assets/images/fulltraining-border-bg.png) 0 0 no-repeat;
+  box-shadow: 0px 27px 22px -11px rgb(27 52 81 / 18%);
+}
+
+.fulltraining-border:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(89.99deg, #F4F7FE -3.72%, rgba(244, 247, 254, 0.8) 37.88%, rgba(244, 247, 254, 0.11) 99.99%);
+  border-radius: 38px;
+}
+
+
+.fulltraining-data {
+  position: relative;
+  z-index: 1;
+  font-family: 'OpenSans';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 125.34%;
+  background: linear-gradient(0deg, #1D1F36, #1D1F36), linear-gradient(103.7deg, #1261AB 36.97%, #65B1E9 94.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.fulltraining-data span {
+  padding: 0 0 0 14px;
+}
+
+.fulltraining-title {
+  position: relative;
+  z-index: 1;
+  padding: 14px 0 0 0;
+  font-family: 'RFDewiExtended';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 119.7%;
+  color: #1D1F36;
+}
+
+.fulltraining-suptitle {
+  position: relative;
+  z-index: 1;
+  padding: 14px 0 0 0;
+  font-family: 'RFDewiExtended';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125.34%;
+  color: #344463;
+}
+
+.fulltraining-button {
+  position: relative;
+  z-index: 1;
+  padding: 44px 0 0 0;
+}
+
+.fulltraining-button button {
+  border: none;
+  font-family: 'RFDewiExtended';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #282D49;
+  background: linear-gradient(266.92deg, #7CAEF5 6.31%, #BBB8F7 91.68%);
+  border-radius: 23px;
+  width: 309px;
+  padding: 19px 0;
+}
+
+.fulltraining-time {
+  position: relative;
+  z-index: 1;
+  padding: 10px 0 0 0;
+  font-family: 'RFDewiExtended';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125.34%;
+  color: #344463;
+}
+
+.fulltraining-time span {
+  background: linear-gradient(266.92deg, #6395F8 6.31%, #B68FFF 91.68%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+@media (max-width: 991.9px) {
+  .fulltraining-border {
+    position: relative;
+    border-radius: 38px;
+    padding: 99px 20px 79px 34px;
+    background: url(../../assets/images//fulltraining-border-bg.png) 0 0 no-repeat;
+    box-shadow: 0px 27px 22px -11px rgb(27 52 81 / 18%);
+  }
+
+  .fulltraining-title {
+    position: relative;
+    z-index: 1;
+    padding: 14px 0 0 0;
+    font-family: 'RFDewiExtended';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 119.7%;
+    color: #1D1F36;
+  }
+}
+
+@media (max-width: 769px) {
+  .fulltraining-container {
+    padding: 0;
+  }
+
+  .fulltraining {
+    padding: 76px 0 76px 0;
+  }
+
+  .fulltraining-border {
+    padding: 281px 32px 51px 32px;
+    background: url(../../assets/images/fulltraining-border-bg2.png) center 0;
+    background-size: cover;
+  }
+
+  .fulltraining-title {
+    font-size: 25px;
+    color: #344463;
+  }
+}
+
+@media (max-width: 480px) {
+  .fulltraining-title br {
+    display: none;
+  }
+}

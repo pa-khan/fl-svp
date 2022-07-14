@@ -1,0 +1,66 @@
+.thematiclectures-block3 {
+  display: none;
+}
+
+.thematiclectures-wrap {
+  display: flex;
+}
+
+.thematiclectures-block {
+  width: 45%;
+}
+
+.thematiclectures-block2 {
+  padding: 28px 0 0 0;
+  width: 55%;
+}
+
+.thematiclectures-slayder {
+  padding: 37px 0 0 0;
+}
+
+.thematiclectures-container {
+  max-width: 1280px !important;
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 1550px) {
+  .thematiclectures-container {
+    padding: 0 0 0 0px;
+    max-width: 1280px !important;
+  }
+}
+
+@media (max-width: 1199.9px) {
+  .thematiclectures-block2 {
+    width: 40%;
+  }
+
+  .thematiclectures-block {
+    width: 60%;
+  }
+}
+
+@media (max-width: 991.9px) {
+  .thematiclectures-block {
+    width: 100%;
+  }
+
+  .thematiclectures-block2 {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .thematiclectures-block3 {
+    display: block;
+  }
+
+  .thematiclectures-slayder {
+    display: none;
+  }
+
+  .thematiclectures-wrap {
+    margin-bottom: 25px;
+  }
+}

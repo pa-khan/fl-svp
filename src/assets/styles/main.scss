@@ -787,6 +787,38 @@ img {
   display: none !important;
 }
 
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  position: absolute;
+  background: #F4F7FE url(../../assets/images/link-arrow.svg) 50% 50% no-repeat;
+  width: 46px;
+  display: block !important;
+  height: 46px;
+  transition: 0.3s;
+  border-radius: 18px;
+  top: -78px;
+
+
+  &:hover {
+    background: url(../../assets/images/link-arrow2.svg) 50% 50% no-repeat;
+  }
+}
+
+.slick-prev {
+  right: 67px;
+  transform: rotate(180deg);
+
+  &:hover {
+    transform: rotate(180deg);
+  }
+}
+
+.slick-next {
+  right: 0;
+}
+
+
 @media (min-width: 576px) {
   .d-sm-block {
     display: block !important;

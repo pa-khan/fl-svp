@@ -1,0 +1,140 @@
+.footer-series {
+  padding: 32px 0 50px 0;
+}
+
+.footer-series-border {
+  background: #344463;
+  border-radius: 38px;
+  box-shadow: 0px 27px 22px -11px rgb(27 52 81 / 18%);
+  padding: 35px 51px 23px 51px;
+}
+
+.footer-series-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 0 24px 0;
+}
+
+.footer-series-restagle {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  opacity: 0.3;
+}
+
+.footer-series-ul {
+  padding: 0 0 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-series-li {
+  padding: 0 0 0 48px;
+}
+
+.footer-series-li a {
+  font-family: 'RFDewiExtended';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #FFFFFF;
+}
+
+.footer-series-inner {
+  padding: 16px 0 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.footer-series-link a {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150.9%;
+  color: #FFFFFF;
+}
+
+.footer-series-social-ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer-series-social-li {
+  padding: 0 0 0 12px;
+}
+
+@media (max-width: 1199.9px) {
+  .footer-series-li {
+    padding: 0 0 0 20px;
+  }
+
+  .footer-series-li a {
+    font-family: 'RFDewiExtended';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 125%;
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 991.9px) {
+  .footer-series-logo a img {
+    width: 159px;
+  }
+
+  .footer-series-border {
+    padding: 18px 24px 34px 24px;
+  }
+
+  .footer-series-wrap {
+    flex-wrap: wrap;
+  }
+
+  .footer-series-logo {
+    padding: 0 0 16px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-series-ul {
+    padding: 16px 0 0 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-series-nav {
+    width: 100%;
+  }
+
+  .footer-series-restagle2 {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    opacity: 0.3
+  }
+}
+
+@media (max-width: 769px) {
+  .footer-series-ul {
+    flex-wrap: wrap;
+  }
+
+  .footer-series-li {
+    text-align: center;
+    width: 100%;
+    padding: 0 0 17px 0;
+  }
+
+  .footer-series-wrap {
+    padding: 0 0 7px 0;
+  }
+}
+
+@media (max-width: 575.9px) {
+  .footer-series-li a {
+    font-size: 16px;
+  }
+
+}
