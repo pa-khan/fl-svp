@@ -556,7 +556,7 @@
 
             </div>
           </div>
-          <button class="slick-next slick-arrow swiper-button-next" ref="controlPrev">Next</button>
+          <button class="slick-next slick-arrow swiper-button-next" ref="controlNext">Next</button>
         </div>
         <!-- <div class="series-slayder-absolute">
 					<div class="series-slayder-border">

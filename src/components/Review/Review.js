@@ -31,8 +31,8 @@ export default {
       loop: true,
       centeredSlides: true,
       navigation: {
-        nextEl: this.$refs.controlPrev,
-        prevEl: this.$refs.controlNext,
+        nextEl: this.$refs.controlNext,
+        prevEl: this.$refs.controlPrev,
       },
       modules: [Navigation]
     });
