@@ -141,7 +141,7 @@
 
 
 
-          <button class="slick-next slick-arrow swiper-button-next" ref="controlPrev">Next</button>
+          <button class="slick-next slick-arrow swiper-button-next" ref="controlNext">Next</button>
         </div>
       </div>
     </Container>
