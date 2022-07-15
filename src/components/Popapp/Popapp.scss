@@ -74,4 +74,10 @@
   background: #D71300;
   border-radius: 26px;
   border: none;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.popapp-button button:hover {
+  background: #A40E00;
 }

@@ -178,6 +178,7 @@ ul.tabs li.current:before {
   padding: 19px 0;
   border: none;
   transition: .3s;
+  cursor: pointer;
 }
 
 .tabs-button button:hover {

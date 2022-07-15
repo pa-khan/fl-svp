@@ -687,6 +687,7 @@ img {
   justify-content: center;
   outline: 0;
   white-space: nowrap;
+  cursor: pointer;
 
   &_primary {
     background: $accent;
@@ -798,7 +799,7 @@ img {
   transition: 0.3s;
   border-radius: 18px;
   top: -78px;
-
+  cursor: pointer;
 
   &:hover {
     background: url(../../assets/images/link-arrow2.svg) 50% 50% no-repeat;
