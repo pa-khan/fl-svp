@@ -23,8 +23,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    padding: 24px 32px
+    width: 40%;
+    padding: 24px 0 0 32px
   }
 
   &__stars {
@@ -58,11 +58,14 @@
   }
 
   &__share {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     position: absolute;
     top: 0;
-    left: 0;
-    right: 50%;
-    padding: 24px 32px
+    right: 0;
+    width: 60%;
+    padding: 24px 32px 0 0
   }
 
   &__play {
