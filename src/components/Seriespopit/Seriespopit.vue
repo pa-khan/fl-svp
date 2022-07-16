@@ -68,6 +68,9 @@
         </div>
       </div>
     </Container>
+    <div class="seriespopit__bg">
+      <img src="@/assets/images/seriespopit-bg.jpg" alt="">
+    </div>
   </section>
 </template>
 <script src="./Seriespopit.js"></script>
