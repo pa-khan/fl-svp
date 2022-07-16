@@ -27,21 +27,21 @@
           </div>
           <button class="slick-next slick-arrow swiper-button-next" ref="controlNext">Next</button>
         </div>
-        <!-- <div class="series-slayder-absolute">
-					<div class="series-slayder-border">
-						<div class="series-slayder-wrap">
-							<div class="series-slayder-title">
-								Теперь вам доступны тематические лекции при покупке полного тренинга. Смотрите ниже.
-							</div>
-							<div class="series-slayder-button">
-								<button>
-									Смотреть
-									<img src="../../assets/images/series-slayder-button.svg" alt="">
-								</button>
-							</div>
-						</div>
-					</div>
-				</div> -->
+        <div class="series-slayder-absolute">
+          <div class="series-slayder-border">
+            <div class="series-slayder-wrap">
+              <div class="series-slayder-title">
+                Теперь вам доступны тематические лекции при покупке полного тренинга. Смотрите ниже.
+              </div>
+              <div class="series-slayder-button">
+                <button>
+                  Смотреть
+                  <img src="../../assets/images/series-slayder-button.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </Container>
     <Container>

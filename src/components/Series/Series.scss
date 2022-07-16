@@ -608,10 +608,12 @@
 }
 
 .series-slayder-absolute {
+  z-index: 1000;
   display: flex;
   justify-content: center;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  left: 0;
   bottom: 24px;
 }
 
@@ -635,6 +637,7 @@
   font-size: 18px;
   line-height: 133.7%;
   color: #344463;
+  padding-right: 15px;
 }
 
 .series-slayder-button button {
@@ -651,6 +654,12 @@
   align-items: center;
   justify-content: center;
   border: none;
+  cursor: pointer;
+}
+
+.series-slayder-button button:hover {
+  background: linear-gradient(266.92deg, #6395F8 6.31%, #B68FFF 91.68%), linear-gradient(266.92deg, #7CAEF5 6.31%, #BBB8F7 91.68%);
+  transition: 0.3s;
 }
 
 .slider {
@@ -767,6 +776,28 @@
     }
   }
 
+  .series-slayder-absolute {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    bottom: 0;
+  }
+
+  .series-slayder-border {
+    padding: 12px;
+  }
+
+  .series-slayder-title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .series-slayder-button button {
+    font-size: 13px;
+    line-height: 14px;
+    height: 36px;
+    width: 120px;
+  }
 
 }
 
