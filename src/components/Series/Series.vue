@@ -34,10 +34,10 @@
                 Теперь вам доступны тематические лекции при покупке полного тренинга. Смотрите ниже.
               </div>
               <div class="series-slayder-button">
-                <button>
+                <a href="#thematiclectures">
                   Смотреть
                   <img src="../../assets/images/series-slayder-button.svg" alt="">
-                </button>
+                </a>
               </div>
             </div>
           </div>

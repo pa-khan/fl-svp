@@ -1,5 +1,5 @@
 <template>
-  <section class="thematiclectures">
+  <section class="thematiclectures" id="thematiclectures">
     <Container>
       <div class="thematiclectures-wrap">
         <div class="thematiclectures-block">

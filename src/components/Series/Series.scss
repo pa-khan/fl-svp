@@ -640,7 +640,7 @@
   padding-right: 15px;
 }
 
-.series-slayder-button button {
+.series-slayder-button a {
   font-family: 'RFDewiExtended';
   font-weight: 600;
   font-size: 15px;
@@ -657,7 +657,7 @@
   cursor: pointer;
 }
 
-.series-slayder-button button:hover {
+.series-slayder-button a:hover {
   background: linear-gradient(266.92deg, #6395F8 6.31%, #B68FFF 91.68%), linear-gradient(266.92deg, #7CAEF5 6.31%, #BBB8F7 91.68%);
   transition: 0.3s;
 }
@@ -792,7 +792,7 @@
     line-height: 16px;
   }
 
-  .series-slayder-button button {
+  .series-slayder-button a {
     font-size: 13px;
     line-height: 14px;
     height: 36px;
