@@ -18,6 +18,9 @@
     <Container class="series-cont">
       <div class="thematiclectures-slayder">
         <div class="slider thematiclectures-sl swiper" ref="slider">
+          <div class="swiper-counter"><var ref="counterCurrent">{{ counterCurrent }}</var> из <var ref="counterTotal">{{
+              counterTotal
+          }}</var></div>
           <button class="slick-prev slick-arrow swiper-button-prev" ref="controlPrev">Previous</button>
           <div class="swiper-wrapper">
             <Episode v-for="item of list" :key="item.title" class="swiper-slide series__item" :item="item"

@@ -18,7 +18,7 @@
     <Container class="series-cont">
       <div class="series-slayder">
         <div class="slider series-sl swiper" ref="slider">
-          <div class="swiper-counter"><var ref="counterCurrent">{{ counterCurrent }}</var> <var ref="counterTotal">{{
+          <div class="swiper-counter"><var ref="counterCurrent">{{ counterCurrent }}</var> из <var ref="counterTotal">{{
               counterTotal
           }}</var></div>
           <button class="slick-prev slick-arrow swiper-button-prev" ref="controlPrev">Previous</button>

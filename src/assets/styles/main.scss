@@ -819,6 +819,20 @@ img {
   right: 0;
 }
 
+.swiper-counter {
+  position: absolute;
+  top: -78px;
+  right: 145px;
+  font-family: 'RFDewiExtended';
+  font-weight: 600;
+  line-height: 46px;
+
+  var {
+    font-style: normal;
+  }
+}
+
+
 
 @media (min-width: 576px) {
   .d-sm-block {
@@ -870,6 +884,10 @@ img {
         font-size: 32px;
       }
     }
+  }
+
+  .swiper-counter {
+    display: none;
   }
 }
 
