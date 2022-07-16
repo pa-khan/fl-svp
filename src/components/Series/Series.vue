@@ -27,14 +27,14 @@
           </div>
           <button class="slick-next slick-arrow swiper-button-next" ref="controlNext">Next</button>
         </div>
-        <div class="series-slayder-absolute">
+        <div class="series-slayder-absolute" :class="isAlertShow ? classAlertShow : null">
           <div class="series-slayder-border">
             <div class="series-slayder-wrap">
               <div class="series-slayder-title">
                 Теперь вам доступны тематические лекции при покупке полного тренинга. Смотрите ниже.
               </div>
               <div class="series-slayder-button">
-                <a href="#thematiclectures">
+                <a href="#thematiclectures" @click="isAlertShow = false">
                   Смотреть
                   <img src="../../assets/images/series-slayder-button.svg" alt="">
                 </a>

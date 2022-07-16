@@ -22,6 +22,8 @@ export default {
   name: 'Series',
   data() {
     return {
+      isAlertShow: true,
+      classAlertShow: '--show',
       counterCurrent: 1,
       list: [
         {

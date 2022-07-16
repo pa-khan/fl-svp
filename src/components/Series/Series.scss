@@ -615,6 +615,14 @@
   position: fixed;
   left: 0;
   bottom: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.series-slayder-absolute.--show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .series-slayder-border {
