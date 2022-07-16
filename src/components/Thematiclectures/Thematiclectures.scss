@@ -44,23 +44,40 @@
 @media (max-width: 991.9px) {
   .thematiclectures-block {
     width: 100%;
+
+    .slick-arrow {
+      top: -110px;
+    }
+  }
+
+  .thematiclectures-wrap {
+    flex-wrap: wrap;
   }
 
   .thematiclectures-block2 {
-    display: none;
+    // display: none;
+    width: 100%;
   }
 }
 
 @media (max-width: 769px) {
-  .thematiclectures-block3 {
-    display: block;
-  }
-
-  .thematiclectures-slayder {
-    display: none;
-  }
 
   .thematiclectures-wrap {
     margin-bottom: 25px;
+  }
+
+  .thematiclectures-slayder {
+    padding-top: 10px;
+  }
+
+  .thematiclectures {
+    .swiper-wrapper {
+      transform: none !important;
+      flex-direction: column;
+    }
+
+    .slick-arrow {
+      display: none !important;
+    }
   }
 }

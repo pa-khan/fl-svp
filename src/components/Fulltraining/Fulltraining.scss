@@ -78,8 +78,14 @@
   color: #282D49;
   background: linear-gradient(266.92deg, #7CAEF5 6.31%, #BBB8F7 91.68%);
   border-radius: 23px;
-  width: 309px;
+  width: 100%;
+  max-width: 309px;
   padding: 19px 0;
+  cursor: pointer;
+}
+
+.fulltraining-button button:hover {
+  background: linear-gradient(266.92deg, #6395F8 6.31%, #B68FFF 91.68%), linear-gradient(266.92deg, #7CAEF5 6.31%, #BBB8F7 91.68%)
 }
 
 .fulltraining-time {

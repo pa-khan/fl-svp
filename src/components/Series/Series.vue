@@ -4,12 +4,7 @@
       <div class="series-wrap">
         <div class="series-block">
           <div class="series-title">
-            Здраствуйте <br>Булат, <span>начните</span> <br class="series-title-br">смотреть 1 серию
-            <div class="series-title-absolute">
-              <div class="series-title-img">
-                <img src="../../assets/images/series-title-img.png" alt="">
-              </div>
-            </div>
+            Здраствуйте <br>Булат, <img src="../../assets/images/series-title-img.png" alt=""> начните
           </div>
           <div class="series-suptitle">
             Каждая следующая серия будет открываться <br>после просмотра предыдущей

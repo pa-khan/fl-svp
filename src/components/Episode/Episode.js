@@ -2,13 +2,22 @@ export default {
   name: 'Episode',
   data() {
     return {
+      isShareShow: false,
       classLock: '--lock',
       classViewed: '--viewed',
+      classShareShow: '--show',
+      classColorRed: '--red',
+      classColorRedLight: '--red-light',
+      classColorOrange: '--orange',
+      classColorOrangeLight: '--orange-light',
+      classColorGreen: '--green',
+      classColorGreenLight: '--green-light',
       time: {
         secs: 0,
         mins: 0,
         hours: 0,
       },
+      review: 0,
       viewPercent: 0,
     }
   },
@@ -22,6 +31,7 @@ export default {
       this.viewPercent = Math.floor(this.item.duration / percent);
     }
   },
+
   computed: {
     descTime() {
       let time = [];
@@ -71,7 +81,54 @@ export default {
       }
       let percent = this.item.rating.total / 10;
       return (this.item.rating.like / percent).toFixed(1).replace('.', ',');
+    },
+
+  },
+  methods: {
+    setColor(item, i) {
+      let cls = '';
+      if (i < 2) {
+        cls = this.classColorRedLight;
+      } else if (i == 2) {
+        cls = this.classColorRed;
+      } else if (i < 5) {
+        cls = this.classColorOrangeLight;
+      } else if (i == 5) {
+        cls = this.classColorOrange;
+      } else if (i < 9) {
+        cls = this.classColorGreenLight;
+      } else if (i == 9) {
+        cls = this.classColorGreen;
+      }
+
+      item.className = 'episode__feedback-item ' + cls;
     }
+  },
+  mounted() {
+    document.addEventListener('click', (e) => {
+      if (this.isShareShow && !e.target.closest('.share')) {
+        this.isShareShow = false;
+      }
+    });
+
+
+    let feedbackItems = this.$refs.episode.querySelectorAll('.episode__feedback-item');
+    if (feedbackItems.length > 0) {
+
+      for (let i = 0; i < feedbackItems.length; i++) {
+        feedbackItems[i].addEventListener('click', () => {
+          for (let j = 0; j < feedbackItems.length; j++) {
+            if (j < i) {
+              this.setColor(feedbackItems[j], i);
+            } else {
+              feedbackItems[j].className = 'episode__feedback-item';
+            }
+          }
+          this.setColor(feedbackItems[i], i);
+        });
+      }
+    }
+
   },
   props: {
     item: Object,

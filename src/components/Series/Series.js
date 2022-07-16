@@ -98,7 +98,7 @@ export default {
     }
   },
   mounted() {
-    new Swiper(this.$refs.slider, {
+    let swiper = new Swiper(this.$refs.slider, {
       slidesPerView: 'auto',
       spaceBetween: 30,
       navigation: {
@@ -115,6 +115,11 @@ export default {
       },
       modules: [Navigation]
     });
+
+    swiper.on('slideChange', () => {
+      this.counterCurrent = swiper.activeIndex + 1
+    });
+
   },
   components: {
     Container,
