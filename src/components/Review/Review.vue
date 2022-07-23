@@ -1,9 +1,37 @@
 <template>
   <section class="section review">
-    <div class="review_title">
+
+
+    <div v-if="$slots.title" class="review_head">
+      <div class="review_title">
+        <slot name="title"></slot>
+      </div>
+      <div v-if="link" class="review_link">
+        <a href="">
+          <span>Смотреть все отзывы</span>
+          <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M1.14999 1.1387C0.674024 1.61464 0.674024 2.38632 1.14999 2.86227L6.78809 8.50048L1.14999 14.1387C0.674025 14.6147 0.674025 15.3863 1.14999 15.8622C1.62595 16.3382 2.3975 16.3382 2.87346 15.8622L9.37351 9.36222C9.84946 8.88626 9.84946 8.11471 9.37351 7.63875L2.87346 1.1387C2.3975 0.662752 1.62595 0.662752 1.14999 1.1387Z"
+              fill="url(#paint0_linear_1165_1019)" />
+            <defs>
+              <linearGradient id="paint0_linear_1165_1019" x1="10.0697" y1="8.25148" x2="0.79961" y2="8.00421"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6395F8" />
+                <stop offset="1" stop-color="#B68FFF" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+        </a>
+      </div>
+    </div>
+
+    <div v-else class="review_title">
       <span class="for-desktop">О тренинге написано более <br> 25 000 отзывов и результатов.</span>
       <span class="for-mobile">О тренинге написано<br> более 25 000 отзывов <br>и результатов.</span>
     </div>
+
+
     <div class="review_carousel swiper" ref="review_carousel">
       <div class="review_list swiper-wrapper">
         <div v-for="item of list" :key="item.title" class="review_item swiper-slide">

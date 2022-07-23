@@ -53,5 +53,8 @@ export default {
 
       });
     }
+  },
+  props: {
+    link: Boolean
   }
 }

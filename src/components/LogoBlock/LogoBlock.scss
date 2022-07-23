@@ -1,0 +1,22 @@
+.logo-block {
+  padding-top: 19px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__text {
+    font-family: 'RFDewiExtended';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 111.2%;
+    text-align: center;
+    color: #A41D21;
+    max-width: 240px;
+
+  }
+}

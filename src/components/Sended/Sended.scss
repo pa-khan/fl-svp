@@ -1,0 +1,68 @@
+.sended {
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__left {
+    width: 52%;
+    padding-right: 40px;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  &__title {
+    font-family: 'RFDewiExtended';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 120.5%;
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+  }
+
+  &__desc {
+    font-family: 'OpenSans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 118.4%;
+    max-width: 310px;
+  }
+
+  &__right {
+    width: 50%;
+    margin-right: -2%;
+    padding-left: 64px;
+    padding-top: 31px;
+  }
+
+  &__start {
+    &-title {
+      font-family: 'OpenSans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 118.4%;
+      color: #344463;
+      opacity: 0.6;
+      margin-bottom: 6px;
+    }
+
+    &-text {
+      font-family: 'RFDewiExtended';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 118.4%;
+
+      u {
+        text-decoration: none;
+        background: linear-gradient(266.94deg, #6395F8 61.86%, #B68FFF 101.49%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+  }
+}
