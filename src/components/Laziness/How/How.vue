@@ -1,0 +1,57 @@
+<template>
+  <div class="l-how">
+    <Container>
+      <div class="l-how__wrap">
+        <div class="l-how__logo">
+          <div class="l-how__logo-icon">
+            <img src="../../../assets/images/logo-icon-box.png" alt="">
+          </div>
+          <div class="l-how__logo-text">Системно-векторная психология</div>
+        </div>
+        <div class="l-how__title">Как избавиться от <u>лени </u> через психоанализ</div>
+        <div class="l-how__list">
+          <div class="l-how__item" v-for="item of list" :key="item.id" v-html="item"></div>
+        </div>
+        <div class="l-how__button" @click="isPopupShow = true">Забронировать место на вебинаре</div>
+      </div>
+    </Container>
+  </div>
+  <div class="l-how__popup" :class="isPopupShow ? classShow : null">
+    <div class="l-how__popup-inner">
+      <div class="l-how__popup-close" @click="isPopupShow = false">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.49689 6L11.6868 1.81011C11.8856 1.61161 11.9975 1.34224 11.9977 1.06127C11.998 0.780301 11.8866 0.51074 11.6881 0.311888C11.4896 0.113037 11.2202 0.00118391 10.9393 0.000935773C10.6583 0.000687639 10.3887 0.112065 10.1899 0.310565L6 4.50046L1.81011 0.310565C1.61125 0.111714 1.34155 0 1.06034 0C0.779117 0 0.509417 0.111714 0.310565 0.310565C0.111714 0.509417 0 0.779117 0 1.06034C0 1.34155 0.111714 1.61125 0.310565 1.81011L4.50046 6L0.310565 10.1899C0.111714 10.3887 0 10.6584 0 10.9397C0 11.2209 0.111714 11.4906 0.310565 11.6894C0.509417 11.8883 0.779117 12 1.06034 12C1.34155 12 1.61125 11.8883 1.81011 11.6894L6 7.49954L10.1899 11.6894C10.3887 11.8883 10.6584 12 10.9397 12C11.2209 12 11.4906 11.8883 11.6894 11.6894C11.8883 11.4906 12 11.2209 12 10.9397C12 10.6584 11.8883 10.3887 11.6894 10.1899L7.49689 6Z"
+            fill="#282D49" />
+        </svg>
+      </div>
+      <div class="l-how__popup-title">Заполните поля, чтобы получить доступ к вебинару</div>
+
+      <div class="l-how__popup-input">
+        <input type="text" size="40" placeholder="Ваше имя" ref="input_name" v-model="fields.name.value"
+          @keyup="validate(fields.name)">
+      </div>
+      <div class="l-how__popup-input">
+        <input type="text" size="40" placeholder="Email" ref="input_email" v-model="fields.email.value"
+          @keyup="validate(fields.email)">
+      </div>
+      <div class="l-how__popup-input">
+        <input type="text" size="40" placeholder="+7 000 000 00 00" ref="input_phone" v-model="fields.phone.value"
+          @keyup="validate(fields.phone)">
+      </div>
+
+      <button class="l-how__popup-button" @click="book">Забронировать место</button>
+      <div class="l-how__popup-desc">Регистрируясь, вы соглашаетесь с <a href="">условиями использования персональных
+          данных</a></div>
+    </div>
+    <div class="l-how__popup-bg" @click="isPopupShow = false"></div>
+  </div>
+  <div class="l-how__video">
+    <iframe src="https://iframe.videodelivery.net/72aad328e6afb813eb1519b779eedf4b?autoplay=true&muted=true"
+      style="border: none" height="720" width="1280"
+      allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+  </div>
+</template>
+<script src="./How.js"></script>
+<style src='./How.scss' lang="scss">
+</style>

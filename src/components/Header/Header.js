@@ -82,6 +82,9 @@ export default {
       }
     }
   },
+  props: {
+    wrapper: Boolean
+  },
   components: {
     Container,
     StickyButton

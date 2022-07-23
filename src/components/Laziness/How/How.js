@@ -1,17 +1,15 @@
-import store from '@/store'
-import Container from '@/components/Container/Container.vue'
-import IMask from 'imask';
+import Container from "@/components/Container/Container.vue"
 
 export default {
-  name: 'Seriespopit',
+  name: 'How',
   data() {
-
     return {
-      block: 1,
-      tabsCurrent: 1,
+      isPopupShow: false,
+      classShow: '--show',
       classCurrent: 'current',
       classError: '--error',
       classFilled: '--filled',
+      classBodyOverflow: 'ov-hidden',
       emailPattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
       fields: {
         name: {
@@ -35,7 +33,13 @@ export default {
           isRequired: true,
           isValid: false,
         },
-      }
+      },
+      list: [
+        'Лениться – так приятно… <br>но жизнь проходит мимо',
+        'Есть секрет - о нем вы узнаете на бесплатной лекции уже завтра, в 21:00',
+        'Планируя, мотивируя, наказывая себя избавиться от лени невозможно',
+        'Внимание! Возможен <br>быстрый результат!'
+      ],
     }
   },
   methods: {
@@ -83,28 +87,7 @@ export default {
           break;
       }
     },
-    login() {
-      let errors = 0;
-      let fieldEmail = this.fields.email;
-      if (fieldEmail.isRequired == true && fieldEmail.isValid != true) {
-        errors++;
-        this.$refs['input_' + fieldEmail.name].classList.add(this.classError);
-      }
-
-      if (errors == 0) {
-        // action submit here
-
-
-
-        // reset fiels
-        fieldEmail.value = '';
-
-        // thanks
-        this.block = 2;
-      }
-
-    },
-    reg() {
+    book() {
       let errors = 0;
       Object.entries(this.fields).forEach(([field, data]) => {
         if (data.isRequired == true && data.isValid != true) {
@@ -128,14 +111,16 @@ export default {
 
     }
   },
-  mounted() {
-
-
-    // IMask(this.$refs['input_phone'], {
-    //   mask: '+7 (000) 000-00-00'
-    // })
+  watch: {
+    isPopupShow() {
+      if (this.isPopupShow) {
+        document.body.classList.add(this.classBodyOverflow);
+      } else {
+        document.body.classList.remove(this.classBodyOverflow);
+      }
+    }
   },
   components: {
     Container
-  },
+  }
 }

@@ -36,7 +36,7 @@
         </div>
       </Container>
     </nav>
-    <Container>
+    <Container v-if="wrapper">
       <div class="header_wrapper">
         <div class="header_top">
           <h1 class="header_title">

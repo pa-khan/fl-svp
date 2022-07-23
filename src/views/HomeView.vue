@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <Header />
+    <Header :wrapper="true" />
     <About />
     <Symp />
     <Reas />

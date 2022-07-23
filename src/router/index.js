@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AuthView from '../views/AuthView.vue'
 import SeriesView from '../views/SeriesView.vue'
+import Laziness from '../views/LazinessView.vue'
+import HowLaziness from '../views/HowLazinessView.vue'
 
 const routes = [
   {
@@ -18,6 +20,16 @@ const routes = [
     path: '/series',
     name: 'series',
     component: SeriesView
+  },
+  {
+    path: '/laziness',
+    name: 'laziness',
+    component: Laziness
+  },
+  {
+    path: '/how-laziness',
+    name: 'how-laziness',
+    component: HowLaziness
   },
   {
     path: '/about',
