@@ -25,36 +25,40 @@ export default {
     }
   },
   mounted() {
-    new Swiper(this.$refs.review_carousel, {
-      slidesPerView: 'auto',
-      spaceBetween: 20,
-      loop: true,
-      centeredSlides: true,
-      navigation: {
-        nextEl: this.$refs.controlNext,
-        prevEl: this.$refs.controlPrev,
-      },
-      modules: [Navigation]
-    });
 
-    const items = document.querySelectorAll('.review_item');
-
-    if (items.length > 0) {
-      items.forEach((item) => {
-        item.textLG = item.querySelector('.review_item-text-lg');
-        item.textSM = item.querySelector('.review_item-text-sm');
-        item.toggleBtn = item.querySelector('.review_item-btn');
-
-
-        item.textSM.innerText = item.textLG.innerText.slice(0, 145) + '...';
-        item.toggleBtn.addEventListener('click', () => {
-          item.classList.add('--open');
-        })
-
+    if (this.$refs.review_carousel) {
+      new Swiper(this.$refs.review_carousel, {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        loop: true,
+        centeredSlides: true,
+        navigation: {
+          nextEl: this.$refs.controlNext,
+          prevEl: this.$refs.controlPrev,
+        },
+        modules: [Navigation]
       });
+
+      const items = document.querySelectorAll('.review_item');
+
+      if (items.length > 0) {
+        items.forEach((item) => {
+          item.textLG = item.querySelector('.review_item-text-lg');
+          item.textSM = item.querySelector('.review_item-text-sm');
+          item.toggleBtn = item.querySelector('.review_item-btn');
+
+
+          item.textSM.innerText = item.textLG.innerText.slice(0, 145) + '...';
+          item.toggleBtn.addEventListener('click', () => {
+            item.classList.add('--open');
+          })
+
+        });
+      }
     }
   },
   props: {
-    link: Boolean
+    link: Boolean,
+    hide: Boolean
   }
 }

@@ -5,6 +5,7 @@ import SeriesView from '../views/SeriesView.vue'
 import Laziness from '../views/LazinessView.vue'
 import HowLaziness from '../views/HowLazinessView.vue'
 import Thanks from '../views/ThanksView.vue'
+import Thanks2 from '../views/Thanks2View.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/thanks',
     name: 'thanks',
     component: Thanks
+  },
+  {
+    path: '/thanks-2',
+    name: 'thanks-2',
+    component: Thanks2
   },
   {
     path: '/about',

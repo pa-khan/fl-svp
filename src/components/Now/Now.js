@@ -6,9 +6,9 @@ export default {
     return {
       list: [
         {
-          type: 2,
-          poster: require('@/assets/images/now-1.jpg'),
-          title: 'Ещё раз про энергичность',
+          type: 1,
+          poster: require('@/assets/images/now-3.jpg'),
+          title: 'Смотреть 1 серию',
         },
         {
           type: 2,
@@ -16,14 +16,14 @@ export default {
           title: 'Начала психоанализа',
         },
         {
-          type: 1,
-          poster: require('@/assets/images/now-3.jpg'),
-          title: 'Смотреть 1 серию',
-        },
-        {
           type: 2,
           poster: require('@/assets/images/now-4.jpg'),
           title: 'Начала психоанализа',
+        },
+        {
+          type: 2,
+          poster: require('@/assets/images/now-1.jpg'),
+          title: 'Ещё раз про энергичность',
         },
         {
           type: 2,

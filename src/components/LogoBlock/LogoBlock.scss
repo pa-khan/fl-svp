@@ -19,4 +19,24 @@
     max-width: 240px;
 
   }
+
+  &__triangles {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo-block {
+    &__triangles {
+      display: block;
+      margin-top: -20px;
+      margin-bottom: -20px;
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
 }

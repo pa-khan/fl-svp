@@ -47,9 +47,10 @@
     <div class="l-how__popup-bg" @click="isPopupShow = false"></div>
   </div>
   <div class="l-how__video">
-    <iframe src="https://iframe.videodelivery.net/72aad328e6afb813eb1519b779eedf4b?autoplay=true&muted=true"
+    <iframe src="https://iframe.videodelivery.net/bc41a22919e06b4a4c3ba86b68c16ed5?autoplay=true&muted=true&loop=true"
       style="border: none" height="720" width="1280"
-      allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+      allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; loop"
+      allowfullscreen="true"></iframe>
   </div>
 </template>
 <script src="./How.js"></script>

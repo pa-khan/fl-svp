@@ -7,6 +7,9 @@
         </div>
         <div class="logo-block__text">Системно-векторная психология</div>
       </div>
+      <div class="logo-block__triangles">
+        <img src="../../assets/images/triangles.png" alt="">
+      </div>
     </Container>
   </div>
 </template>

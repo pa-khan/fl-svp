@@ -1,0 +1,174 @@
+.choiser {
+  padding-top: 7px;
+
+  &__inner {
+    width: 100%;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'RFDewiExtended';
+    max-width: 770px;
+    margin: 0 auto 74px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px -16px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 2 - 20px);
+    padding: 20px 40px 24px 40px;
+    margin: 0 10px 16px;
+    background: #F4F7FE;
+    border-radius: 20px;
+    transition: .3s;
+    border: 1px solid #F4F7FE;
+    box-shadow: 0px 35px 29px 8px rgba(0, 0, 0, 0.08);
+    transition: .3s;
+
+    &.--checked {
+      border-color: #7CAEF5;
+      box-shadow: none;
+
+      .choiser__item {
+        &-box {
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &-input {
+      display: none;
+    }
+
+    &-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      background: #FFFFFF;
+      border-radius: 7px;
+      margin-bottom: 24px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: .3s;
+
+      &:before {
+        opacity: 0;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(266.92deg, #7CAEF5 6.31%, #BBB8F7 91.68%), #FFFFFF;
+      }
+
+      svg {
+        z-index: 1;
+        position: relative;
+        transition: .3s;
+      }
+    }
+
+    &-title {
+      font-family: 'RFDewiExtended';
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 120.5%;
+      letter-spacing: -0.01em;
+      color: #344463;
+      margin-top: auto;
+      margin-bottom: 8px;
+    }
+
+    &-text {
+      font-size: 15px;
+      line-height: 1.5;
+      font-family: 'OpenSans';
+    }
+  }
+
+  &__get-wrap {
+    margin: 45px auto 0;
+    text-align: center;
+  }
+
+  &__get {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "RFDewiExtended";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #282D49;
+    background: linear-gradient(266.92deg, #7CAEF5 6.31%, #BBB8F7 91.68%);
+    border-radius: 22px;
+    // width: 100%;
+    padding: 19px 0;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    min-width: 460px;
+
+    &.--disabled {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    &:hover {
+      background: linear-gradient(266.92deg, #6395F8 6.31%, #B68FFF 91.68%), linear-gradient(266.92deg, #7CAEF5 6.31%, #BBB8F7 91.68%);
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 767px) {
+  .choiser {
+    &__title {
+      text-align: left;
+      margin-bottom: 32px;
+    }
+
+    &__list {
+      margin: 0;
+    }
+
+    &__item {
+      width: 100%;
+      margin: 0 0 16px;
+      padding: 20px 24px;
+
+      br {
+        display: none;
+      }
+    }
+
+    &__get-wrap {
+      margin-top: 24px;
+    }
+
+    &__get {
+      width: 100%;
+      min-width: 1px;
+    }
+  }
+}

@@ -14,3 +14,42 @@
     }
   }
 }
+
+@media screen and (max-width: 860px) {
+  .thx {
+    &__title {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .thx {
+    padding-top: 0;
+    padding-bottom: 24px;
+
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+
+      img {
+        width: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .thx {
+    &__title {
+      br {
+        display: none;
+      }
+
+      img {
+        margin-right: 6px;
+      }
+    }
+  }
+}

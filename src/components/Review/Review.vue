@@ -32,7 +32,7 @@
     </div>
 
 
-    <div class="review_carousel swiper" ref="review_carousel">
+    <div v-if="!hide" class="review_carousel swiper" ref="review_carousel">
       <div class="review_list swiper-wrapper">
         <div v-for="item of list" :key="item.title" class="review_item swiper-slide">
           <div class="review_item-title">{{ item.title }}</div>
