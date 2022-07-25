@@ -36,6 +36,7 @@
     border: 1px solid #F4F7FE;
     box-shadow: 0px 35px 29px 8px rgba(0, 0, 0, 0.08);
     transition: .3s;
+    cursor: pointer;
 
     &.--checked {
       border-color: #7CAEF5;

@@ -1,9 +1,9 @@
 <template>
   <div class="preview" :class="bg ? '--bg' : null">
     <Container class="--sm">
-      <div class="preview__video" @click="toLink">
+      <div class="preview__video" :class="isPlay ? classPlay : null">
         <div class="preview__video-inner">
-          <div class="preview__play">
+          <div class="preview__play" @click="togglePlay">
             <div class="preview__play-icon">
               <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -15,6 +15,12 @@
           </div>
           <div class="preview__video-bg">
             <img :src="poster" alt="">
+          </div>
+          <div class="preview__video-box">
+            <iframe ref="iframe" width="560" height="315" src="https://www.youtube.com/embed/iWg7gtGHlbo"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
         <div class="preview__video-title">{{ videoTitle }}</div>
