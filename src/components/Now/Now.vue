@@ -21,7 +21,7 @@
     <div class="now__list">
       <div v-for="item of list" :key="item.title" class="now__item">
         <div class="now__item-inner">
-          <div v-if="item.type == 1" class="now__item-play">
+          <div v-if="item.type == 1" class="now__item-play" @click="toLink">
             <div class="now__item-icon --play">
               <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

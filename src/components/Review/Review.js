@@ -57,6 +57,7 @@ export default {
       }
     }
   },
+
   props: {
     link: Boolean,
     hide: Boolean

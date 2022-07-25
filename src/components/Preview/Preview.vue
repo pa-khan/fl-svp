@@ -1,7 +1,7 @@
 <template>
   <div class="preview" :class="bg ? '--bg' : null">
     <Container class="--sm">
-      <div class="preview__video">
+      <div class="preview__video" @click="toLink">
         <div class="preview__video-inner">
           <div class="preview__play">
             <div class="preview__play-icon">

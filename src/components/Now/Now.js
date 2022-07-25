@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     toLink() {
-
+      window.open('https://www.yburlan.ru/serial/', '_blank');
     }
   },
   components: {

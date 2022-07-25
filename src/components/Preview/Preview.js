@@ -11,6 +11,11 @@ export default {
   components: {
     Container
   },
+  methods: {
+    toLink() {
+      window.open('https://www.yburlan.ru/serial/', '_blank');
+    }
+  },
   props: {
     bg: Boolean,
     videoTitle: String,
